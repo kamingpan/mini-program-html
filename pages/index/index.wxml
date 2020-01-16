@@ -1,0 +1,12 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <block  wx:if="{{hasUserInfo}}">
+      <image bindtap="logout" class="userinfo-avatar" src="{{userInfo.portrait}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickname}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view>

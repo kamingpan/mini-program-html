@@ -1,0 +1,10 @@
+<!--log.wxml-->
+<view class="container">
+  <view class="login-body">
+    <button wx:if="{{showLoginButton}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo" hover-class='hover-button'> 微信授权登录 </button>
+    <block wx:else>
+      <button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber" hover-class='hover-button'> 授权获取手机 </button>
+      <text class='skip-text' bindtap="redirectTo"> 跳过 </text>
+    </block>
+  </view>
+</view>

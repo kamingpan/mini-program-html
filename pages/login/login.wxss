@@ -1,0 +1,38 @@
+/**login.wxss**/
+
+button {
+  display: inline-block;
+  line-height: 1;
+  white-space: nowrap;
+  text-align: center;
+  outline: none;
+  margin: 0;
+  transition: 0.1s;
+  font-weight: 400;
+  color: #fff;
+  background-color: #1890ff;
+  padding: 26rpx 34rpx;
+  font-size: 30rpx;
+}
+
+button::after {
+  border: 1px solid #1890ff;
+}
+
+.hover-button {
+  color: #1890ff;
+  background-color: #fff;
+}
+
+.login-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skip-text {
+  color: #1890ff;
+  font-size: 28rpx;
+  margin-top: 20rpx;
+  text-decoration: underline;
+}
